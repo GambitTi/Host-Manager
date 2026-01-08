@@ -1,0 +1,52 @@
+# === Sensitive files (ELK Security) ===
+config.properties
+secrets.txt
+*.pem
+*.key
+*.credentials
+*.env
+*.log
+auth.json
+
+# === Java Compiled and Packaged files ===
+*.class
+*.jar
+*.war
+
+# === Build and Output Directories ===
+bin/
+out/
+dist/
+target/
+build/
+.gradle/
+
+# === IDE Specifics ===
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+/nbproject/private/
+
+# === OS Specifics ===
+.DS_Store
+Thumbs.db
+
+# === Editor and Temporary Backup Files ===
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+
+# 1. Remove everything from the Git index (this doesn't delete your local files)
+##git rm -r --cached .
+
+# 2. Re-add everything (Git will now look at your new .gitignore)
+##git add .
+
+# 3. Commit the "clean" state
+##git commit -m "Apply updated .gitignore and remove tracked sensitive files"
